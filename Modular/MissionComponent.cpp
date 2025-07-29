@@ -5,11 +5,6 @@ UMissionComponent::UMissionComponent()
   
 }
 
-void UMissionComponent::BeginPlay()
-{
-    Super::BeginPlay();
-}
-
 void UMissionComponent::StartMission()
 {
     if (CurrentMission.State == EMissionState::NotStarted)
