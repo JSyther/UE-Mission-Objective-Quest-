@@ -6,15 +6,12 @@
 #include "MissionComponent.generated.h"
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
-class YOURGAME_API UMissionComponent : public UActorComponent
+class YOURGAME_API UMissionComponent : public UObject
 {
     GENERATED_BODY()
 
 public:
     UMissionComponent();
-
-protected:
-    virtual void BeginPlay() override;
 
 public:
     // Currently active mission data
